@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace oop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c; 
+            double x, y, z;
+            a = 4;
+            b = 5;
+            c = 6;
+
+            Add_int(a, b , c);
+
+            x = 4.556;
+            y = 5.665;
+            z = 5.884;
+
+            Add_double(x, y ,z);
+
+        }
+        static void Add_int(int a , int b , int c )
+        {
+            int addition = a + b + c;
+            Console.WriteLine("The result is " + addition);
+        }
+        static void Add_int(int a, int b)
+        {
+            int addition = a + b;
+            Console.WriteLine("The result is " + addition);
+        }
+        static void Add_double (double x , double y , double z)
+        {
+            double Add = x + y + z ;
+            Console.WriteLine("\n Addition of double is --" + Add);
+        }
+        static void Add_double(double x, double y)
+        {
+            double Add = x + y ;
+            Console.WriteLine("\n Addition of double is --" + Add);
+        }
+    }
+}
